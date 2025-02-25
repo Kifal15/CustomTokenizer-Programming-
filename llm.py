@@ -53,8 +53,7 @@ trainer = BpeTrainer(
 
     vocab_size = 32000,
     min_frequency = 2 ,
-    special_tokens = ["PAD" , "UNK" , "MASK" , "SEP" , "CLS" ]
-
+    special_tokens = ["PAD" , "UNK" , "MASK" , "SEP" , "CLS" ],
 
 
 )
@@ -67,11 +66,13 @@ data =[ "preprocessed_python_corpus.txt"]
 
 # Train the tokenizer
 
-tokenizer.train(data)
+tokenizer.train(data, trainer)  # Use 8 threads
+
 # Add a post-processor for handling special tokens
 from tokenizers.processors import TemplateProcessing  # ✅ Import this
 
 tokenizer.post_processor =  TemplateProcessing(
+
 
 
     single = "[CLS] $A [SEP]",
@@ -84,3 +85,6 @@ tokenizer.post_processor =  TemplateProcessing(
 # Save tokenizer model
 tokenizer.save("bpe_tokenizer.json")
 print("Tokenizer training complete!")
+
+
+
