@@ -1,0 +1,85 @@
+Vocabulary size is , 32000
+Here is the actual sentence def add(a, b): return a + b
+here is the tokenized output ['<s>', 'Ġdef', 'Ġadd', '(', 'a', ',', 'Ġb', '):', 'Ġreturn', 'Ġa', 'Ġ+', 'Ġb', '</s>']
+Length of the token :13
+
+Here is the actual sentence import numpy as np
+here is the tokenized output ['<s>', 'Ġimport', 'Ġnumpy', 'Ġas', 'Ġnp', '</s>']
+Length of the token :6
+
+Here is the actual sentence for i in range(10): print(i)
+here is the tokenized output ['<s>', 'Ġfor', 'Ġi', 'Ġin', 'Ġrange', '(', '10', '):', 'Ġprint', '(', 'i', ')', '</s>']
+Length of the token :13
+
+Here is the actual sentence print('Hello, World!')
+here is the tokenized output ['<s>', 'Ġprint', "('", 'Hello', ',', 'ĠWorld', "!')", '</s>']
+Length of the token :8
+
+Here is the actual sentence if x > 0: print('Positive') else: print('Negative')
+here is the tokenized output ['<s>', 'Ġif', 'Ġx', 'Ġ>', 'Ġ0', ':', 'Ġprint', "('", 'Positive', "')", 'Ġelse', ':', 'Ġprint', "('", 'Negative', "')", '</s>']
+Length of the token :17
+
+Here is the actual sentence with open('file.txt', 'r') as f: data = f.read()
+here is the tokenized output ['<s>', 'Ġwith', 'Ġopen', "('", 'file', '.', 'txt', "',", "Ġ'", 'r', "')", 'Ġas', 'Ġf', ':', 'Ġdata', 'Ġ=', 'Ġf', '.', 'read', '()', '</s>']
+Length of the token :21
+
+Here is the actual sentence class Car: def __init__(self, brand): self.brand = brand
+here is the tokenized output ['<s>', 'Ġclass', 'ĠCar', ':', 'Ġdef', 'Ġ__', 'init', '__(', 'self', ',', 'Ġb', 'rand', '):', 'Ġself', '.', 'brand', 'Ġ=', 'Ġb', 'rand', '</s>']
+Length of the token :20
+
+Here is the actual sentence def factorial(n): return 1 if n == 0 else n * factorial(n-1)
+here is the tokenized output ['<s>', 'Ġdef', 'Ġfactorial', '(', 'n', '):', 'Ġreturn', 'Ġ1', 'Ġif', 'Ġn', 'Ġ==', 'Ġ0', 'Ġelse', 'Ġn', 'Ġ*', 'Ġfactorial', '(', 'n', '-', '1', ')', '</s>']
+Length of the token :22
+
+Here is the actual sentence try: x = int(input()) except ValueError: print('Invalid input')
+here is the tokenized output ['<s>', 'Ġtry', ':', 'Ġx', 'Ġ=', 'Ġint', '(', 'input', '())', 'Ġexcept', 'ĠValueError', ':', 'Ġprint', "('", 'Invalid', 'Ġinput', "')", '</s>']
+Length of the token :18
+
+Here is the actual sentence import torch.nn as nn
+here is the tokenized output ['<s>', 'Ġimport', 'Ġtor', 'ch', '.', 'nn', 'Ġas', 'Ġnn', '</s>']
+Length of the token :9
+
+Here is the actual sentence class Model(nn.Module): def __init__(self): super().__init__()
+here is the tokenized output ['<s>', 'Ġclass', 'ĠModel', '(', 'nn', '.', 'Module', '):', 'Ġdef', 'Ġ__', 'init', '__(', 'self', '):', 'Ġsuper', '().__', 'init', '__()', '</s>']
+Length of the token :19
+
+Here is the actual sentence lambda_func = lambda x: x**2 + 2*x + 1
+here is the tokenized output ['<s>', 'Ġlambda', '_', 'func', 'Ġ=', 'Ġlambda', 'Ġx', ':', 'Ġx', '**', '2', 'Ġ+', 'Ġ2', '*', 'x', 'Ġ+', 'Ġ1', '</s>']
+Length of the token :18
+
+Here is the actual sentence def greet(name): return f'Hello, {name}!'
+here is the tokenized output ['<s>', 'Ġdef', 'Ġgreet', '(', 'name', '):', 'Ġreturn', 'Ġf', "'", 'Hello', ',', 'Ġ{', 'name', '}', "!'", '</s>']
+Length of the token :16
+
+Here is the actual sentence numbers = [x**2 for x in range(10) if x % 2 == 0]
+here is the tokenized output ['<s>', 'Ġnumbers', 'Ġ=', 'Ġ[', 'x', '**', '2', 'Ġfor', 'Ġx', 'Ġin', 'Ġrange', '(', '10', ')', 'Ġif', 'Ġx', 'Ġ%', 'Ġ2', 'Ġ==', 'Ġ0', ']', '</s>']
+Length of the token :22
+
+Here is the actual sentence assert sum([1, 2, 3]) == 6, 'Sum is incorrect'
+here is the tokenized output ['<s>', 'Ġassert', 'Ġsum', '([', '1', ',', 'Ġ2', ',', 'Ġ3', '])', 'Ġ==', 'Ġ6', ',', "Ġ'", 'Sum', 'Ġis', 'Ġincorrect', "'", '</s>']
+Length of the token :19
+
+Here is the actual sentence from collections import Counter
+here is the tokenized output ['<s>', 'Ġfrom', 'Ġcollections', 'Ġimport', 'ĠCounter', '</s>']
+Length of the token :6
+
+Here is the actual sentence Counter(['apple', 'banana', 'apple', 'orange'])
+here is the tokenized output ['<s>', 'ĠCounter', "(['", 'apple', "',", "Ġ'", 'banana', "',", "Ġ'", 'apple', "',", "Ġ'", 'orange', "'])", '</s>']
+Length of the token :15
+
+Here is the actual sentence def reverse_string(s): return s[::-1]
+here is the tokenized output ['<s>', 'Ġdef', 'Ġreverse', '_', 'string', '(', 's', '):', 'Ġreturn', 'Ġs', '[::-', '1', ']', '</s>']
+Length of the token :14
+
+Here is the actual sentence while True: break
+here is the tokenized output ['<s>', 'Ġwhile', 'ĠTrue', ':', 'Ġbreak', '</s>']
+Length of the token :6
+
+Here is the actual sentence for key, value in {'a': 1, 'b': 2}.items(): print(key, value)
+here is the tokenized output ['<s>', 'Ġfor', 'Ġkey', ',', 'Ġvalue', 'Ġin', "Ġ{'", 'a', "':", 'Ġ1', ',', "Ġ'", 'b', "':", 'Ġ2', '}.', 'items', '():', 'Ġprint', '(', 'key', ',', 'Ġvalue', ')', '</s>']
+Length of the token :25
+
+
+Total Tokens: 307
+OOV Tokens: 0
+OOV Rate: 0.00%
