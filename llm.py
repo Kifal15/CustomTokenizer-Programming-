@@ -69,8 +69,18 @@ data =[ "preprocessed_python_corpus.txt"]
 
 tokenizer.train(data)
 # Add a post-processor for handling special tokens
+from tokenizers.processors import TemplateProcessing  # ✅ Import this
 
+tokenizer.post_processor =  TemplateProcessing(
+
+
+    single = "[CLS] $A [SEP]",
+    pair = "[CLS] $A [SEP] $B:1 [SEP]:1",
+    special_tokens= { 
+        ('[CLS]',tokenizer.token_to_id("[CLS]") ),
+        ('[SEP]',tokenizer.token_to_id("[SEP]"))
+    })
 
 # Save tokenizer model
-
+tokenizer.save("bpe_tokenizer.json")
 print("Tokenizer training complete!")
